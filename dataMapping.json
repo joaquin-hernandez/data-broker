@@ -1,0 +1,75 @@
+{
+    "form_id": "CancelacionHipoteca",
+    "form_name": "Cancelacion Hipoteca",
+    "realted_tables": [
+      "PagoDeDerechos",
+      "pagoComplementario"
+    ],
+    "column_field_mapping": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "field": "Partida",
+            "column": "party"
+          },
+          {
+            "type": "string",
+            "field": "Tomo",
+            "column": "book"
+          }
+        ],
+        "schema": "public",
+        "table_name": "cancelacion_hipoteca",
+        "table_type": "main",
+        "object_name": "datosDeInscripcion",
+        "id_column_name": "id",
+        "id_column_type": "int"
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "field": "reciboDePago",
+            "column": "paymentOrder",
+            "nullable": false
+          },
+          {
+            "type": "float",
+            "field": "totalDeDerechos",
+            "column": "totalRights",
+            "decimals": 2,
+            "nullable": false
+          } 
+        ],
+        "schema": "public",
+        "table_name": "pago_de_derechos",
+        "table_type": "related",
+        "object_name": "pagoDeDerechos",
+        "id_column_name": "id",
+        "id_column_type": "int"
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "field": "ordenDePagoNo",
+            "column": "PaymentNumber",
+            "nullable": false
+          },
+          {
+            "type": "date",
+            "field": "fechaDeRegistro",
+            "column": "fechaDeRegistro",
+            "nullable": false
+          }
+        ],
+        "schema": "public",
+        "table_name": "paymentRights",
+        "table_type": "related",
+        "object_name": "pagoComplementario",
+        "id_column_name": "id",
+        "id_column_type": "int"
+      }
+    ]
+  } 

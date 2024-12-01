@@ -1,0 +1,17 @@
+{
+    "formDocumentId": "u03w4brai6dgpf5jpqleaiqd",
+    "formData": {
+        "datosDeInscripcion": {
+            "Partida": "par",
+            "Tomo": "Tomo-123"
+        },
+        "pagoDeDerechos": {
+            "totalDeDerechos": 13.20,
+            "reciboDePago": 1234
+        },
+        "pagoComplementario": {
+            "ordenDePagoNo": "llkkm1123",
+            "fechaDeRegistro": "01-01-2024"
+        }
+    }
+}
